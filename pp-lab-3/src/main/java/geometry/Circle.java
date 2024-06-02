@@ -20,4 +20,15 @@ public class Circle {
         this.center = center;
         this.radius = radius;
     }
+
+    public void calculateArea() {
+        System.out.println(
+                String.format(
+                        "Circle pointed in X: %s Y: %s has area: %s u^2",
+                        this.center.getX(),
+                        this.center.getY(),
+                        Math.PI * Math.pow(radius, 2)
+                )
+        );
+    }
 }
